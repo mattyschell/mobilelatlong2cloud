@@ -1,6 +1,6 @@
 ## CITYLIMITS 
 
-This layer appears to be used to filter out bad inputs. It is the aggregate union of borough.
+Determines if the given lat/lon coordinates are within NYC. Per business rules, the service needs to indicate that it did not have response data since the location was not in NYC.
 
 The legacy application properties:
 

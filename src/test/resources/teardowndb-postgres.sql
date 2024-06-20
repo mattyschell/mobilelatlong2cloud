@@ -1,1 +1,0 @@
-drop database if exists mobile_latlong;
