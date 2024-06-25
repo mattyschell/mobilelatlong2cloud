@@ -9,7 +9,7 @@ with
     replication 
     nobypassrls;
 create user 
-    mobile_latlong 
+    reversegeocode 
 with 
     superuser 
     createdb 
@@ -17,4 +17,7 @@ with
 grant 
     azure_pg_admin 
 to 
-    mobile_latlong;
+    reversegeocode;
+create user 
+    mobile_latlong 
+with password :'v1';

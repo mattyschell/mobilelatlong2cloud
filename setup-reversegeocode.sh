@@ -3,7 +3,7 @@ if [ $PGHOST = 'localhost' ]; then
 else
 	psql -t -v v1=$MLPASSWORD -f ./sql/create-users.sql
 fi
-export PGUSER=mobile_latlong
+export PGUSER=reversegeocode
 export PGPASSWORD=$MLPASSWORD
 psql -t -f ./sql/create-database.sql
 export PGDATABASE=reversegeocode

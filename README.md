@@ -3,9 +3,9 @@
 The real repository is maintained elsewhere.  This is a simple Azure Database for PostgreSQL demo project. Friends, this is our demo project, our rules, the trick is never to be afraid. 
 
 
-### Create reversegeocode database owned by mobile_latlong
+### Set Up
 
-Consider a creating a second read-only user. Keeping it simple for now.
+Creates a database named reversegeocode with user and schema mobile_latlong. 
 
 ```shell
 $ export MLPASSWORD=whywasthe6scared?because789
@@ -17,7 +17,9 @@ $ export PGPORT=5432
 $ ./setup-reversegeocode.sh 
 ```
 
-### Teardown everything we created
+### Tear Down Everything
+
+Drops database and users.
 
 ```shell
 $ export MLPASSWORD=whywasthe6scared?because789

@@ -24,3 +24,6 @@ on
     geo_districts 
 using 
     gist(geom);
+grant all privileges on citylimits TO mobile_latlong;
+grant all privileges on geo_districts TO mobile_latlong;
+
