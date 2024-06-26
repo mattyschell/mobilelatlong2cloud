@@ -105,8 +105,8 @@ def run_simple_test(testscript
 
     # these should be set but lets set them for debugging 
     pghost = os.getenv('PGHOST', 'localhost') 
-    pguser = os.getenv('PGUSER', 'postgres')
-    pgdatabase = os.getenv('PGDATABASE', 'gis')
+    pguser = os.getenv('PGUSER')
+    pgdatabase = os.getenv('PGDATABASE')
     pgsslmode = os.getenv('PGSSLMODE', 'prefer')
     pgsslrootcert = os.getenv('PGSSLROOTCERT','~/.postgresql/root.crt')
 

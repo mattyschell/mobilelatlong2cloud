@@ -30,3 +30,31 @@ $ export PGDATABASE=postgres
 $ export PGPORT=5432
 $ ./teardown-reversegeocode.sh
 ```
+
+### Load mobile_latlong data
+
+We'll use the database owner.
+
+```shell
+$ export PGUSER=reversegeocode
+$ export PGPASSWORD=whywasthe6scared?because789
+$ export PGHOST=psql-dollar-dollar-bill
+$ export PGDATABASE=reversegeocode
+$ export PGPORT=5432
+$ ./load-mobile_latlong.sh
+```
+
+### Test 
+
+We'll use mobile_latlong.
+
+```shell
+$ export PGUSER=mobile_latlong
+$ export PGPASSWORD=whywasthe6scared?because789
+$ export PGHOST=psql-dollar-dollar-bill
+$ export PGDATABASE=reversegeocode
+$ export PGPORT=5432
+$ ./test-mobile_latlong.sh
+```
+
+

@@ -3,6 +3,10 @@ grant usage on schema
     mobile_latlong 
 to 
     public;
+grant usage on schema 
+    mobile_latlong 
+to 
+    mobile_latlong;
 -- secure schema usage pattern
 -- https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATTERNS
 revoke create on schema 
