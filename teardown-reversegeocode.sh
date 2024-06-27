@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 export AZUSER=$PGUSER
 export AZPASSWORD=$PGPASSWORD
 export PGUSER=reversegeocode

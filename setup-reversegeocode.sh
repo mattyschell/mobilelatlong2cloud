@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 if [ $PGHOST = 'localhost' ]; then
 	psql -t -v v1=$MLPASSWORD -f ./sql/create-users-local.sql
 else
