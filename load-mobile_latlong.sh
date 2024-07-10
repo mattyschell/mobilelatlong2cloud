@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-psql -t -f ./data/citylimits.sql
+psql -t -f ./data/all.sql

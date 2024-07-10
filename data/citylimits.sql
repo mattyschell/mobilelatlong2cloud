@@ -1,4 +1,3 @@
-set search_path to mobile_latlong, public;
 SET CLIENT_ENCODING TO UTF8;
 SET STANDARD_CONFORMING_STRINGS TO ON;
 BEGIN;

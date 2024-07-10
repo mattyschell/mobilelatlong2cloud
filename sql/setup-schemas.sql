@@ -14,7 +14,7 @@ using
 -- the legacy oracle schema has no index on layer_name
 -- so we will assume primary access by spatial index
 create table geo_districts (     
-    objectid integer primary key
+    objectid serial primary key
    ,geom geometry(multipolygon, 2263)
    ,layer_name varchar(50)
    ,feature_value varchar(200)

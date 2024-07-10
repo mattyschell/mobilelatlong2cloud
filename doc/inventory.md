@@ -17,31 +17,31 @@ In the legacy system the water extent varies. Also, as always, New York loves to
 Where possible we will use OTI's Citywide Street Centerline database as a source. 
 
 
-| Name  | Local Authority | App Extent | Source du jour |
-| ------------- | ------------- | ------------- | ------------- |
-| assemblydistrict | CSCL | Partial Water | CSCL Pub |
-| borough | CSCL | Partial Water | CSCL Pub | 
-| censusblock | CSCL | Partial Water | CENSUSBLOCK2020 CSCL Pub |  
-| censustract | CSCL | Partial Water | CENSUSTRACT2020 CSCL Pub |
-| city | ???? | Land | Take from legacy |
-| communitydistrict | CSCL | Land | CSCL_PUB (water included) |
-| congressionaldistrict | CSCL | Partial Water | CSCL Pub |
-| councildistrict | CSCL | Land plus some water | CSCL Pub |
-| courtdistrict | DCP | Land | Bytes of the Big Apple |
-| electiondistrict | CSCL | Water | CSCL Pub |
-| firebattalion | DCP | Land | Bytes of the Big Apple |
-| firecompany | CSCL | Land | CSCL Pub |
-| firedivision | DCP | Land | Bytes of the Big Apple |
-| healtharea | CSCL | Land | CSCL Pub (water included) |
-| healthcenterdistrict | CSCL | Land | CSCL Pub (water included) |
-| housingdistrict | NYCHA | Land | NYC Open Data |
-| policeboroughcommand | NYPD | Land | Generate new |
-| policeprecinct | CSCL | Water | CSCL Pub |
-| policesector | NYPD | Partial Water | NYC Open Data |
-| sanitationdistrict | DSNY | Land | DSNY Arcgis Service |
-| schooldistrict | CSCL | Land | CSCL Pub |
-| statesenatorialdistrict | CSCL | Water | CSCL Pub |
-| zip code | CSCL | Land  | CSCL Pub |
+| Name  | Local Authority | App Extent | Source du jour | Notes
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| assemblydistrict | CSCL | Partial Water | CSCL Pub | |
+| borough | CSCL | Partial Water | CSCL Pub | Upper case borough names |
+| censusblock | CSCL | Partial Water | CENSUSBLOCK2020 CSCL Pub | |
+| censustract | CSCL | Partial Water | CENSUSTRACT2020 CSCL Pub | |
+| city | ???? | Land | Take from legacy | |
+| communitydistrict | CSCL | Land | CSCL_PUB (water included) | |
+| congressionaldistrict | CSCL | Partial Water | CSCL Pub | |
+| councildistrict | CSCL | Land plus some water | CSCL Pub | |
+| courtdistrict | DCP | Land | Bytes of the Big Apple | |
+| electiondistrict | CSCL | Water | CSCL Pub | |
+| firebattalion | DCP | Land | Bytes of the Big Apple | |
+| firecompany | CSCL | Land | CSCL Pub | |
+| firedivision | DCP | Land | Bytes of the Big Apple | |
+| healtharea | CSCL | Land | CSCL Pub (water included) | |
+| healthcenterdistrict | CSCL | Land | CSCL Pub (water included) | |
+| housingdistrict | NYCHA | Land | NYC Open Data | |
+| policeboroughcommand | NYPD | Land | Generate new | |
+| policeprecinct | CSCL | Water | CSCL Pub | |
+| policesector | NYPD | Partial Water | NYC Open Data | |
+| sanitationdistrict | DSNY | Land | DSNY Arcgis Service | |
+| schooldistrict | CSCL | Land | CSCL Pub | |
+| statesenatorialdistrict | CSCL | Water | CSCL Pub | |
+| zip code | CSCL | Land  | CSCL Pub | |
 
 ## BADDIES
 

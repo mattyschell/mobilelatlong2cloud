@@ -5,4 +5,7 @@
 *.shx
 *.dbf
 *.prj
+*.cpg
+*.qmd
 scratch/*
+*-local.sh
