@@ -1,4 +1,3 @@
-set search_path to mobile_latlong, public;
 update 
     geo_districts 
 set 
