@@ -21,7 +21,7 @@ Where possible we will use OTI's Citywide Street Centerline database as a source
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | assemblydistrict | CSCL | Partial Water | CSCL Pub | |
 | borough | CSCL | Partial Water | CSCL Pub | Upper case borough names |
-| censusblock | CSCL | Partial Water | CENSUSBLOCK2020 CSCL Pub | |
+| censusblock | CSCL | Partial Water | CENSUSBLOCK2020 CSCL Pub | see [issue 4](https://github.com/mattyschell/mobilelatlong2cloud/issues/4)  |
 | censustract | CSCL | Partial Water | CENSUSTRACT2020 CSCL Pub | |
 | city | ???? | Land | Take from legacy | |
 | communitydistrict | CSCL | Land | CSCL_PUB (water included) | |

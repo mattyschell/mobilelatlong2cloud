@@ -4,6 +4,8 @@ set client_min_messages TO warning;
 \i ./data/citylimits.sql;
 \i ./data/borough.sql;
 \i ./data/borough-finalize.sql;
-\i ./data/assemblydistricts.sql;
-\i ./data/assemblydistricts-finalize.sql;
+\i ./data/assemblydistrict.sql;
+\i ./data/assemblydistrict-finalize.sql;
+\i ./data/censusblock.sql;
+\i ./data/censusblock-finalize.sql;
 
