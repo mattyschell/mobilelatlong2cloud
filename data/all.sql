@@ -14,5 +14,7 @@ set client_min_messages TO warning;
 \i ./data/city-finalize.sql;
 \i ./data/communitydistrict.sql;
 \i ./data/communitydistrict-finalize.sql;
+\i ./data/congressionaldistrict.sql;
+\i ./data/congressionaldistrict-finalize.sql;
 
 
