@@ -49,4 +49,20 @@ from
     geo_districts a
 where
     layer_name = 'CENSUSBLOCK'
+and ST_Contains(a.geom, (select geom from centralpark))
+union all
+SELECT 
+    a.feature_value 
+from
+    geo_districts a
+where
+    layer_name = 'CENSUSTRACT'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+SELECT 
+    a.feature_value 
+from
+    geo_districts a
+where
+    layer_name = 'CENSUSTRACT'
 and ST_Contains(a.geom, (select geom from centralpark));
