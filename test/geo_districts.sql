@@ -8,7 +8,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'BOROUGH'
+    a.layer_name = 'BOROUGH'
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
@@ -16,7 +16,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'BOROUGH'
+    a.layer_name = 'BOROUGH'
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
@@ -24,7 +24,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'ASSEMBLYDISTRICT'
+    a.layer_name = 'ASSEMBLYDISTRICT'
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
@@ -32,7 +32,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'ASSEMBLYDISTRICT'
+    a.layer_name = 'ASSEMBLYDISTRICT'
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
@@ -40,7 +40,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'CENSUSBLOCK'
+    a.layer_name = 'CENSUSBLOCK'
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
@@ -48,7 +48,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'CENSUSBLOCK'
+    a.layer_name = 'CENSUSBLOCK'
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
@@ -56,7 +56,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'CENSUSTRACT'
+    a.layer_name = 'CENSUSTRACT'
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
@@ -64,7 +64,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'CENSUSTRACT'
+    a.layer_name = 'CENSUSTRACT'
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
@@ -72,7 +72,7 @@ select
 from
     geo_districts a
 where
-    layer_name = 'CITY'
+    a.layer_name = 'CITY'
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
@@ -80,5 +80,21 @@ select
 from
     geo_districts a
 where
-    layer_name = 'CITY'
+    a.layer_name = 'CITY'
+and ST_Contains(a.geom, (select geom from centralpark))
+union all
+select 
+    a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'COMMUNITYDISTRICT'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'COMMUNITYDISTRICT'
 and ST_Contains(a.geom, (select geom from centralpark));

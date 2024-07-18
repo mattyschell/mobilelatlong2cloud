@@ -12,4 +12,7 @@ set client_min_messages TO warning;
 \i ./data/censustract-finalize.sql;
 \i ./data/city.sql;
 \i ./data/city-finalize.sql;
+\i ./data/communitydistrict.sql;
+\i ./data/communitydistrict-finalize.sql;
+
 
