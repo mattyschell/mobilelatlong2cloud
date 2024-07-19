@@ -27,7 +27,7 @@ Where possible we will use OTI's Citywide Street Centerline database as a source
 | communitydistrict | CSCL | Land | CSCL_PUB (water included) | |
 | congressionaldistrict | CSCL | Partial Water | CSCL Pub | |
 | councildistrict | CSCL | Land plus some water | CSCL Pub | |
-| courtdistrict | DCP | Land | Bytes of the Big Apple | |
+| courtdistrict | DCP | Land | Bytes of the Big Apple | see [issue 6](https://github.com/mattyschell/mobilelatlong2cloud/issues/6) |
 | electiondistrict | CSCL | Water | CSCL Pub | |
 | firebattalion | DCP | Land | Bytes of the Big Apple | |
 | firecompany | CSCL | Land | CSCL Pub | |

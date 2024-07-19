@@ -18,3 +18,5 @@ set client_min_messages TO warning;
 \i ./data/congressionaldistrict-finalize.sql;
 \i ./data/councildistrict.sql;
 \i ./data/councildistrict-finalize.sql;
+\i ./data/courtdistrict.sql;
+\i ./data/courtdistrict-finalize.sql;
