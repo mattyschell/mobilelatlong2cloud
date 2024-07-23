@@ -2,6 +2,8 @@ with gishq as (
 select ST_SETSRID(ST_GeomFromText('POINT(988208 191860)'),2263) as geom
 ), centralpark as (
 select ST_SETSRID(ST_GeomFromText('POINT(993981 224105)'),2263) as geom
+), battery as (
+select ST_SETSRID(ST_GeomFromText('POINT(979861 195102)'),2263) as geom
 )
 select 
     'BOROUGH | ' || a.feature_value 
@@ -177,4 +179,12 @@ from
     geo_districts a
 where
     a.layer_name = 'FIREBATTALION'
-and ST_Contains(a.geom, (select geom from centralpark));
+and ST_Contains(a.geom, (select geom from centralpark))
+union all --extra check 3 on firebattalion lpad
+select 
+    'FIREBATTALION | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'FIREBATTALION'
+and ST_Contains(a.geom, (select geom from battery));
