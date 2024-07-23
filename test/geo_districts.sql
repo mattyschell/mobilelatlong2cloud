@@ -4,7 +4,7 @@ select ST_SETSRID(ST_GeomFromText('POINT(988208 191860)'),2263) as geom
 select ST_SETSRID(ST_GeomFromText('POINT(993981 224105)'),2263) as geom
 )
 select 
-    a.feature_value 
+    'BOROUGH | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -12,7 +12,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'BOROUGH | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -20,7 +20,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'ASSEMBLYDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -28,7 +28,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'ASSEMBLYDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -36,7 +36,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'CENSUSBLOCK | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -44,7 +44,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'CENSUSBLOCK | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -52,7 +52,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'CENSUSTRACT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -60,7 +60,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'CENSUSTRACT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -68,7 +68,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'CITY | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -76,7 +76,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'CITY | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -84,7 +84,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'COMMUNITYDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -92,7 +92,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'COMMUNITYDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -100,7 +100,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'CONGRESSIONALDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -108,7 +108,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'CONGRESSIONALDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -116,7 +116,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'COUNCILDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -124,7 +124,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'COUNCILDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -132,7 +132,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'COURTDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -140,7 +140,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'COURTDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -148,7 +148,7 @@ where
 and ST_Contains(a.geom, (select geom from centralpark))
 union all
 select 
-    a.feature_value 
+    'ELECTIONDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
@@ -156,7 +156,7 @@ where
 and ST_Contains(a.geom, (select geom from gishq))    
 union all
 select 
-    a.feature_value 
+    'ELECTIONDISTRICT | ' || a.feature_value 
 from
     geo_districts a
 where
