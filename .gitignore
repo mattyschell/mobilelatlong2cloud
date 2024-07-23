@@ -7,5 +7,6 @@
 *.prj
 *.cpg
 *.qmd
+*.shp.xml
 scratch/*
 *-local.sh

@@ -22,3 +22,5 @@ set client_min_messages TO warning;
 \i ./data/courtdistrict-finalize.sql;
 \i ./data/electiondistrict.sql;
 \i ./data/electiondistrict-finalize.sql;
+\i ./data/firebattalion.sql;
+\i ./data/firebattalion-finalize.sql;

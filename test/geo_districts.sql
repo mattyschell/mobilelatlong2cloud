@@ -161,4 +161,20 @@ from
     geo_districts a
 where
     a.layer_name = 'ELECTIONDISTRICT'
+and ST_Contains(a.geom, (select geom from centralpark))
+union all
+select 
+    'FIREBATTALION | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'FIREBATTALION'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'FIREBATTALION | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'FIREBATTALION'
 and ST_Contains(a.geom, (select geom from centralpark));
