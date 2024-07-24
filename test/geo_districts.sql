@@ -219,4 +219,20 @@ from
     geo_districts a
 where
     a.layer_name = 'FIREDIVISION'
+and ST_Contains(a.geom, (select geom from centralpark))
+union all
+select 
+    'HEALTHAREA | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'HEALTHAREA'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'HEALTHAREA | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'HEALTHAREA'
 and ST_Contains(a.geom, (select geom from centralpark));

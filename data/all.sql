@@ -28,3 +28,5 @@ set client_min_messages TO warning;
 \i ./data/firecompany-finalize.sql;
 \i ./data/firedivision.sql;
 \i ./data/firedivision-finalize.sql;
+\i ./data/healtharea.sql;
+\i ./data/healtharea-finalize.sql;
