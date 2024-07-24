@@ -30,7 +30,7 @@ Where possible we will use OTI's Citywide Street Centerline database as a source
 | courtdistrict | DCP | Land | Bytes of the Big Apple | see [issue 6](https://github.com/mattyschell/mobilelatlong2cloud/issues/6) |
 | electiondistrict | CSCL | Water | CSCL Pub | see [issue 7](https://github.com/mattyschell/mobilelatlong2cloud/issues/7) |
 | firebattalion | DCP | Land | Bytes of the Big Apple | |
-| firecompany | CSCL | Land | CSCL Pub | |
+| firecompany | CSCL | Land | CSCL Pub | see [issue 8](https://github.com/mattyschell/mobilelatlong2cloud/issues/8) |
 | firedivision | DCP | Land | Bytes of the Big Apple | |
 | healtharea | CSCL | Land | CSCL Pub (water included) | |
 | healthcenterdistrict | CSCL | Land | CSCL Pub (water included) | |

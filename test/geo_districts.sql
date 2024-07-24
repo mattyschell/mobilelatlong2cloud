@@ -187,4 +187,20 @@ from
     geo_districts a
 where
     a.layer_name = 'FIREBATTALION'
-and ST_Contains(a.geom, (select geom from battery));
+and ST_Contains(a.geom, (select geom from battery))
+union all
+select 
+    'FIRECOMPANY | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'FIRECOMPANY'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'FIRECOMPANY | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'FIRECOMPANY'
+and ST_Contains(a.geom, (select geom from centralpark));
