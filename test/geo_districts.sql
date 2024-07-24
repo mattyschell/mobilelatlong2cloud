@@ -203,4 +203,20 @@ from
     geo_districts a
 where
     a.layer_name = 'FIRECOMPANY'
+and ST_Contains(a.geom, (select geom from centralpark))
+union all
+select 
+    'FIREDIVISION | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'FIREDIVISION'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'FIREDIVISION | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'FIREDIVISION'
 and ST_Contains(a.geom, (select geom from centralpark));
