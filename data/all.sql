@@ -30,3 +30,5 @@ set client_min_messages TO warning;
 \i ./data/firedivision-finalize.sql;
 \i ./data/healtharea.sql;
 \i ./data/healtharea-finalize.sql;
+\i ./data/healthcenterdistrict.sql;
+\i ./data/healthcenterdistrict-finalize.sql;
