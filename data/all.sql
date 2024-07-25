@@ -32,3 +32,5 @@ set client_min_messages TO warning;
 \i ./data/healtharea-finalize.sql;
 \i ./data/healthcenterdistrict.sql;
 \i ./data/healthcenterdistrict-finalize.sql;
+\i ./data/housingdistrict.sql;
+\i ./data/housingdistrict-finalize.sql;

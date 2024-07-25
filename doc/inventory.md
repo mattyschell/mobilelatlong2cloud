@@ -34,7 +34,7 @@ Where possible we will use OTI's Citywide Street Centerline database as a source
 | firedivision | DCP | Land | Bytes of the Big Apple | |
 | healtharea | CSCL | Land | CSCL Pub (water included) | Left pad with zeros |
 | healthcenterdistrict | CSCL | Land | CSCL Pub (water included) | |
-| housingdistrict | NYCHA | Land | NYC Open Data | Will need to decide what to do with FHA repossessed homes and, for all records, the value returned. Legacy returns integers that don't appear to exist any more. |
+| housingdistrict | NYCHA | Land | NYC Open Data | see [issue 9](https://github.com/mattyschell/mobilelatlong2cloud/issues/9) |
 | policeboroughcommand | NYPD | Land | Generate new | These aren't published.  Get a list of precincts (like from wikipedia) and aggregate policeprecinct records. |
 | policeprecinct | CSCL | Water | CSCL Pub | |
 | policesector | NYPD | Partial Water | NYC Open Data | |
