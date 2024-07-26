@@ -34,3 +34,5 @@ set client_min_messages TO warning;
 \i ./data/healthcenterdistrict-finalize.sql;
 \i ./data/housingdistrict.sql;
 \i ./data/housingdistrict-finalize.sql;
+\i ./data/policeprecinct.sql;
+\i ./data/policeprecinct-finalize.sql;

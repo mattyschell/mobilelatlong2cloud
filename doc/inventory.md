@@ -36,7 +36,7 @@ Where possible we will use OTI's Citywide Street Centerline database as a source
 | healthcenterdistrict | CSCL | Land | CSCL Pub (water included) | |
 | housingdistrict | NYCHA | Land | NYC Open Data | see [issue 9](https://github.com/mattyschell/mobilelatlong2cloud/issues/9) |
 | policeboroughcommand | NYPD | Land | Generate new | These aren't published.  Get a list of precincts (like from wikipedia) and aggregate policeprecinct records. |
-| policeprecinct | CSCL | Water | CSCL Pub | |
+| policeprecinct | CSCL | Water | CSCL Pub | left pad with zeros |
 | policesector | NYPD | Partial Water | NYC Open Data | |
 | sanitationdistrict | DSNY | Land | DSNY Arcgis Service | |
 | schooldistrict | CSCL | Land | CSCL Pub | |

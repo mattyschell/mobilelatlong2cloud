@@ -277,4 +277,20 @@ from
     geo_districts a
 where
     a.layer_name = 'HOUSINGDISTRICT'
-and ST_Contains(a.geom, (select geom from bayview));
+and ST_Contains(a.geom, (select geom from bayview))
+union all
+select 
+    'POLICEPRECINCT | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'POLICEPRECINCT'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'POLICEPRECINCT | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'POLICEPRECINCT'
+and ST_Contains(a.geom, (select geom from centralpark));
