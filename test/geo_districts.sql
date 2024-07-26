@@ -293,4 +293,20 @@ from
     geo_districts a
 where
     a.layer_name = 'POLICEPRECINCT'
+and ST_Contains(a.geom, (select geom from centralpark))
+union all
+select 
+    'POLICEBOROUGHCOMMAND | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'POLICEBOROUGHCOMMAND'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'POLICEBOROUGHCOMMAND | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'POLICEBOROUGHCOMMAND'
 and ST_Contains(a.geom, (select geom from centralpark));

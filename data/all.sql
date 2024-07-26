@@ -36,3 +36,4 @@ set client_min_messages TO warning;
 \i ./data/housingdistrict-finalize.sql;
 \i ./data/policeprecinct.sql;
 \i ./data/policeprecinct-finalize.sql;
+\i ./data/policeboroughcommand-finalize.sql; 
