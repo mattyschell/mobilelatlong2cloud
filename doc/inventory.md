@@ -38,7 +38,7 @@ Where possible we will use OTI's Citywide Street Centerline database as a source
 | policeboroughcommand | NYPD | Land | Generate new | These aren't published.  We will use the list of precincts by borough command on [wikipedia](https://en.wikipedia.org/wiki/Organization_of_the_New_York_City_Police_Department#Police_precincts) and aggregate |
 | policeprecinct | CSCL | Water | CSCL Pub | left pad with zeros |
 | policesector | NYPD | Partial Water | NYC Open Data | |
-| sanitationdistrict | DSNY | Land | DSNY Arcgis Service | |
+| sanitationdistrict | DSNY | Land | DSNY Arcgis Service | Use DCP district code.  Legacy app used undissolved sanitation sector shapes  |
 | schooldistrict | CSCL | Land | CSCL Pub | |
 | statesenatorialdistrict | CSCL | Water | CSCL Pub | |
 | zip code | CSCL | Land  | CSCL Pub | |

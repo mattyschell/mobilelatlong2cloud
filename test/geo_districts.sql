@@ -326,4 +326,20 @@ from
 where
     a.layer_name = 'POLICESECTOR'
 and ST_Contains(a.geom, (select geom from centralpark))
+union all
+select 
+    'SANITATIONDISTRICT | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'SANITATIONDISTRICT'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'SANITATIONDISTRICT | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'SANITATIONDISTRICT'
+and ST_Contains(a.geom, (select geom from centralpark))
 ;
