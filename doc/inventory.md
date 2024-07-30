@@ -39,7 +39,7 @@ Where possible we will use OTI's Citywide Street Centerline database as a source
 | policeprecinct | CSCL | Water | CSCL Pub | left pad with zeros |
 | policesector | NYPD | Partial Water | NYC Open Data | |
 | sanitationdistrict | DSNY | Land | DSNY Arcgis Service | Use DCP district code.  Legacy app used undissolved sanitation sector shapes  |
-| schooldistrict | CSCL | Land | CSCL Pub | |
+| schooldistrict | CSCL | Land | CSCL Pub | left pad with zeros |
 | statesenatorialdistrict | CSCL | Water | CSCL Pub | |
 | zip code | CSCL | Land  | CSCL Pub | |
 
