@@ -43,3 +43,5 @@ set client_min_messages TO warning;
 \i ./data/sanitationdistrict-finalize.sql;
 \i ./data/schooldistrict.sql;
 \i ./data/schooldistrict-finalize.sql;
+\i ./data/statesenatorialdistrict.sql;
+\i ./data/statesenatorialdistrict-finalize.sql;

@@ -358,4 +358,20 @@ from
 where
     a.layer_name = 'SCHOOLDISTRICT'
 and ST_Contains(a.geom, (select geom from centralpark))
+union all
+select 
+    'STATESENATORIALDISTRICT | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'STATESENATORIALDISTRICT'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'STATESENATORIALDISTRICT | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'STATESENATORIALDISTRICT'
+and ST_Contains(a.geom, (select geom from centralpark))
 ;
