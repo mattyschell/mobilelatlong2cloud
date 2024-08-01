@@ -41,5 +41,5 @@ Where possible we will use OTI's Citywide Street Centerline database as a source
 | sanitationdistrict | DSNY | Land | DSNY Arcgis Service | Use DCP district code.  Legacy app used undissolved sanitation sector shapes  |
 | schooldistrict | CSCL | Land | CSCL Pub | left pad with zeros |
 | statesenatorialdistrict | CSCL | Water | CSCL Pub | Who came up with  "senatorial"? |
-| zip code | CSCL | Land  | CSCL Pub | |
+| zip code | CSCL | Land  | CSCL Pub | Yes there is a space in the name. See [issue 11](https://github.com/mattyschell/mobilelatlong2cloud/issues/11) |
 

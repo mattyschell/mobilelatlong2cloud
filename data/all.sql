@@ -45,3 +45,5 @@ set client_min_messages TO warning;
 \i ./data/schooldistrict-finalize.sql;
 \i ./data/statesenatorialdistrict.sql;
 \i ./data/statesenatorialdistrict-finalize.sql;
+\i ./data/zipcode.sql;
+\i ./data/zipcode-finalize.sql;

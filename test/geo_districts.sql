@@ -374,4 +374,20 @@ from
 where
     a.layer_name = 'STATESENATORIALDISTRICT'
 and ST_Contains(a.geom, (select geom from centralpark))
+union all
+select 
+    'ZIP CODE | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'ZIP CODE'
+and ST_Contains(a.geom, (select geom from gishq))    
+union all
+select 
+    'ZIP CODE | ' || a.feature_value 
+from
+    geo_districts a
+where
+    a.layer_name = 'ZIP CODE'
+and ST_Contains(a.geom, (select geom from centralpark))
 ;
