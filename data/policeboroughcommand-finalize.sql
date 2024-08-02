@@ -142,3 +142,36 @@ select
             )
     ,'POLICEBOROUGHCOMMAND'
     ,'Staten Island';
+-- remove interior ring artifact slivers
+-- the subquery to get objectids in policeboroughcommand is not strictly necessary
+-- as of today all rows have interiors
+with pbcexteriorring 
+as (    
+    select 
+        objectid as objectid
+       ,st_makepolygon(st_exteriorring((ST_Dump(geom)).geom)) as geom
+    from 
+        geo_districts
+    where 
+        objectid in
+        (select objectid from (
+            select 
+                objectid as objectid
+               ,ST_NumInteriorRings((ST_Dump(geom)).geom) as kount
+            from 
+                geo_districts
+            where 
+                layer_name = 'POLICEBOROUGHCOMMAND'
+            )
+        where
+            kount > 0 
+        )
+    ) 
+update 
+    geo_districts 
+set 
+    geom = pbcexteriorring.geom
+from 
+    pbcexteriorring
+where
+    geo_districts.objectid = pbcexteriorring.objectid;
