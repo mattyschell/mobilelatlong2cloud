@@ -2,6 +2,13 @@
 
 The real repository is maintained elsewhere.  This is a simple Azure Database for PostgreSQL demo project. Friends, this is our demo project, our rules, the trick is never to be afraid. 
 
+## README TL;DR Just One Shell Script Please
+
+Replace the variables.
+
+```shell
+$ ./teardown-setup-load-test.sh 
+```
 
 ### Set Up
 
