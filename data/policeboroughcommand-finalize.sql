@@ -175,3 +175,16 @@ from
     pbcexteriorring
 where
     geo_districts.objectid = pbcexteriorring.objectid;
+-- remove 2 spikes
+update 
+    geo_districts
+set 
+    geom = st_buffer(st_buffer(geom
+                              ,.1
+                              ,'join=mitre')
+                    ,-.1
+                    ,'join=mitre')
+where 
+    layer_name = 'POLICEBOROUGHCOMMAND'
+and feature_value in ('Brooklyn South'
+                     ,'Brooklyn North');
