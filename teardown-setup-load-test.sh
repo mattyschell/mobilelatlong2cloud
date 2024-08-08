@@ -43,3 +43,4 @@ export PGUSER=mobile_latlong
 ./test-mobile_latlong.sh
 
 # good comrades end with a blank line
+

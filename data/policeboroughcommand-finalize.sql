@@ -145,6 +145,8 @@ select
 -- remove interior ring artifact slivers
 -- the subquery to get objectids in policeboroughcommand is not strictly necessary
 -- as of today all rows have interiors
+-- be careful with this in case of legit interior rings
+-- consider adding an area filter
 with pbcexteriorring 
 as (    
     select 
