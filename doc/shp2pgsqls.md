@@ -42,3 +42,7 @@ shp2pgsql -s 2263 -a schooldistrict.shp geo_districts > schooldistrict.sql
 shp2pgsql -s 2263 -a statesenatorialdistrict.shp geo_districts > statesenatorialdistrict.sql
 
 shp2pgsql -s 2263 -a zipcode.shp geo_districts > zipcode.sql
+
+shp2pgsql -s 2263 -c zctasrough.shp zctasrough > zctasrough.sql
+
+shp2pgsql -s 2263 -a zcta.shp geo_districts > zcta.sql
